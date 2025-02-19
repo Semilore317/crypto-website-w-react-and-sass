@@ -1,0 +1,63 @@
+@import "../../styles/mixins";
+
+.hero {
+  background-color: var(--black);
+  padding-block: 5rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    background-image: url("../../assets/blur-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+
+    @include respond(tablet-portrait) {
+      grid-template-columns: 1fr;
+      background: none;
+    }
+  }
+
+  &__left img{
+    width: 90%;
+    @include respond(tablet-portrait) {
+      width: 100%;
+    }
+  }
+
+
+  @include respond(tablet-portrait) {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  &__right{
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    a{
+      width: fit-content;
+    }
+  }
+
+  h1{
+    text-transform: uppercase;
+    font-size: 3.3rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    line-height: 1.2;
+
+    @include respond(phone){
+      font-size: 2.4rem;
+    }
+
+    p{
+      margin-block: 1.5rem 2.5rem;
+      line-height: 1.6;
+    }
+  }
+}
