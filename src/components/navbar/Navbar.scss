@@ -1,0 +1,95 @@
+@import "../../styles/mixins";
+
+.navbar {
+  background: var(--black);
+  padding-block: 0.6rem;
+  position: relative;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo img {
+    width: 5rem;
+  }
+
+  &__menu {
+    color: white;
+    display: none;
+
+    @include respond(tablet-portrait) {
+      display: inline-block;
+      font-size: 2.3rem;
+      color: var(--spanish-gray);
+      cursor: pointer;
+    }
+  }
+
+  /* Navigation Links */
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+
+    @include respond(tablet-portrait) {
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: flex-start;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 2rem;
+      background-color: var(--black);
+      width: 100%;
+      border-top: 1px solid var(--spanish-gray);
+      display: none; /* Initially hidden */
+      z-index: 99;
+      transition: all 0.3s ease-in-out;
+    }
+
+    a {
+      color: var(--cultured);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--spanish-gray);
+      }
+    }
+  }
+
+  /* Show menu when toggled */
+  ul.show-nav {
+    display: flex;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      text-transform: uppercase;
+      color: var(--cultured);
+    }
+
+    @include respond(tablet-portrait) {
+      display: none;
+    }
+  }
+}
+
+/* Always show the menu on larger screens */
+@media (min-width: 900px) {
+  .navbar ul {
+    display: flex !important;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+}
