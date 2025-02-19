@@ -1,0 +1,26 @@
+@import '../../styles/mixins';
+
+.companies {
+  padding-block: 5rem;
+  margin-bottom: 5rem;
+
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem 2rem;
+    flex-wrap: wrap;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  img{
+    width: 11rem;
+
+    @include respond(phone){
+      margin-inline: auto;
+    }
+  }
+}
