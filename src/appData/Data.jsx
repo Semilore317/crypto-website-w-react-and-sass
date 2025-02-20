@@ -6,6 +6,7 @@ import Company5 from "../assets/5.png";
 import Icon1 from "../assets/icon-1.png";
 import Icon2 from "../assets/icon-2.png";
 import Icon3 from "../assets/icon-3.png";
+import Icon4 from "../assets/usdc-usd-coin-svgrepo-com.png";
 
 
 export const companyInfo = [
@@ -47,4 +48,9 @@ export const pricingInfo = [
     name: "Ripple",
     price: "$ 0.6549",
   },
+  {
+    image: Icon4,
+    name: "USDC",
+    price: "$1.00",
+  }
 ];

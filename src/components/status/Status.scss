@@ -1,6 +1,6 @@
 @import "../../styles/mixins";
 
-.earnings {
+.status{
   padding-block: 5rem;
 
   &__container{
@@ -9,7 +9,7 @@
     align-items: center;
     gap: 6rem 4rem;
 
-    @include respond(tablet-portrait) {
+    @include respond(tablet-portrait){
       grid-template-columns: 1fr;
     }
   }
@@ -23,12 +23,18 @@
     line-height: 1.2;
     text-transform: capitalize;
 
-    @include respond(phone){
+    @include respond(tablet-portrait){
       font-size: 2.2rem;
     }
   }
 
   p{
     margin-block: 1rem 2rem;
+  }
+
+  &__left{
+    @include respond(tablet-portrait){
+      order: 2;
+    }
   }
 }

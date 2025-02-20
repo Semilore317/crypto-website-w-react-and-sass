@@ -1,5 +1,5 @@
 import "./Pricing.scss";
-import { pricingInfo } from "../../appData/Data.js";
+import { pricingInfo } from "../../appData/Data.jsx";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import  {useEffect} from "react";
