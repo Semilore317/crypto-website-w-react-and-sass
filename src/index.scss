@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6, p{
     cursor: pointer;
 
     &:hover{
+        border: 1px solid #3fe8ab;
         border-color: #3fe8ab;
         background: transparent;
         color: var(--cultured) !important;

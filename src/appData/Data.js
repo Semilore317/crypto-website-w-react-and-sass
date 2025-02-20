@@ -35,16 +35,16 @@ export const pricingInfo = [
   {
     image: Icon1,
     name: "Bitcoin",
-    price: "31,020.564 $",
+    price: "$ 96,932.07",
   },
   {
     image: Icon2,
     name: "Ethereum",
-    price: "4.4668 $",
+    price: "$ 4.4668",
   },
   {
     image: Icon3,
     name: "Ripple",
-    price: "0.6549 $",
+    price: "$ 0.6549",
   },
 ];
