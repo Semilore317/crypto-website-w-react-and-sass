@@ -1,5 +1,6 @@
 import "./Footer.scss";
 import Logo from "../../assets/Logo.png";
+import wallet from "../../assets/img_1.png"
 import {
     FaFacebookF,
     FaInstagram,
@@ -19,7 +20,7 @@ const Footer = () => {
         <div className="footer">
             <div className="footer__container wrapper" data-aos="fade-up">
                 <div className="footer__col">
-                    <img src={Logo} alt="Logo image"/>
+                    <img src={wallet} alt="Logo image"/>
                     {/*
                     <p>
                         Your trusted source for the latest crypto updates, <br/>

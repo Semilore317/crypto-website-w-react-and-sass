@@ -1,5 +1,6 @@
 import "./Hero.scss";
 import Mob from "../../assets/Mob.png";
+import wallet from "../../assets/img_1.png";
 // animate on scroll library
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -14,7 +15,8 @@ const Hero = () => {
             <section className="hero">
                 <div className="hero__container wrapper">
                     <div className="hero__left" data-aos="fade-right">
-                        <img src={Mob} alt="Hero"/>
+                        <img src={Mob} alt="Hero" className="img-1" />
+                        <img src={wallet} alt="wallet" className="img-2" />
                     </div>
                     <div className="hero__right" data-aos="zoom-in-up">
                         <h1>Make easier Crypto Transactions</h1>

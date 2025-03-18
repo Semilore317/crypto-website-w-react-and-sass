@@ -17,9 +17,21 @@
     @include respond(tablet-portrait) {
       grid-template-columns: 1fr;
       background: none;
+      gap: 10rem;
     }
   }
-
+  &__left{
+    position: relative;
+    @include respond(tablet-portrait) {
+      position: static;
+    }
+    img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
   &__left img{
     width: 90%;
     @include respond(tablet-portrait) {
@@ -27,6 +39,17 @@
     }
   }
 
+  .img-1{
+    @include respond(tablet-portrait) {
+      display: none;
+    }
+  }
+
+  .img-2{
+    width: 10rem;
+    height: 10rem;
+    z-index: 5;
+  }
 
   @include respond(tablet-portrait) {
     width: 80%;
